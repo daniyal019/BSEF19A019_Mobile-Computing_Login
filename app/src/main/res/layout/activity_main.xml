@@ -9,18 +9,18 @@
 
     <TextView
         android:id="@+id/tv_heading"
-        android:layout_width="168dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="392dp"
+        android:layout_width="157dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
         android:gravity="center"
         android:text="Forget Password"
-        android:textColor="#000"
+        android:textColor="#FFFDFD"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_already_have_account"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword" />
 
     <TextView
         android:id="@+id/textView"
@@ -45,8 +45,9 @@
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        tools:layout_editor_absoluteX="110dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -58,30 +59,35 @@
         android:hint="Username or Email"
         android:inputType="textEmailAddress"
         android:textColorHint="#FDFCFC"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="110dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/tv_already_have_account"
-        android:layout_width="168dp"
-        android:layout_height="30dp"
+        android:layout_width="157dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
         android:gravity="center"
         android:text="Remember Password!"
-        android:textColor="#000"
+        android:textColor="#F8F8F8"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintEnd_toStartOf="@+id/tv_heading"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="392dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="83dp"
+        android:layout_marginTop="68dp"
         android:background="@color/newc"
         android:text="Login"
-        app:layout_constraintTop_toTopOf="@+id/tv_heading"
-        tools:layout_editor_absoluteX="167dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_already_have_account" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
